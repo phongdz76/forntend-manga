@@ -1,0 +1,129 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+.img-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+#img-video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.img-background img{
+    width: 100%;
+    height: 100%;
+}
+.form-container {
+    padding: 40px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 600px;
+    background-color: rgba(170, 170, 170, 0.421);
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+.form-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+h1 {
+    margin: 0;
+    color: #333;
+    font-size: 36px;
+    background: #fc4748;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    color: #333;
+    font-size: 16px;
+    font-weight: 550;
+    margin-bottom: 5px;
+}
+input, textarea {
+    width: 95%  ;
+    padding: 12px;
+    margin-bottom: 15px;
+    outline: none;
+    color: black;
+    border: 3px solid #d9d9d9;
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(50px);
+    transition: 200ms;
+    border-radius: 20px;
+    font-size: 16px;
+}
+input:focus, textarea:focus {
+    border: 3px solid #fc4748;
+    color: #000000;
+}
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+.file-input {
+    margin-bottom: 25px;
+}
+.file-input input {
+    display: none;
+}
+.file-input label {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #fc4748;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.file-input label:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.btn-submit {
+    background: #fc4748;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    opacity: 0.9;
+    color: black;
+}
